@@ -5,10 +5,7 @@ import { useDispatch } from "react-redux";
 
 const FilterButton = () => {
     const dispatch=useDispatch();
-    const currentFilter=useSelector((state => state.filter))
-    const handleFilter=(filter)=>{
-        dispatch(filterTodo(filter))
-    }
+  
   return (
     <div className="flex space-x-4 items-center">
       
